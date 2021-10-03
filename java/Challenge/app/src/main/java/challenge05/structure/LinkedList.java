@@ -1,6 +1,7 @@
 package challenge05.structure;
 
 import challenge05.data.LinkedListNode;
+import org.w3c.dom.Node;
 
 public class LinkedList {
 
@@ -68,5 +69,65 @@ public class LinkedList {
       System.out.println("NULL");
     }
   }
+  public void append(String value) {
+    LinkedListNode node = new LinkedListNode(value);
+
+    if (head == null)
+      head = node;
+    else {
+      LinkedListNode current = head;
+      while (current.getNext() != null) {
+        current = current.getNext();
+      }
+        current.setNext(node);
+
+
+    }
+  }
+  public void insertBefore(String value , String newdata){
+    LinkedListNode node = new LinkedListNode(newdata);
+    if (head == null){
+      head = node;
+      node.setData(newdata);
+    }else if(head.getData()==value){
+      node.setNext(head);
+      head = node;
+    }else{
+      LinkedListNode current = head;
+      while (current.getNext() != null){
+        if (current.getNext().getData()==value) {
+          node.setNext(current.getNext());
+          current.setNext(node);
+        }
+        current = current.getNext();
+      }
+
+    }
+
+  }
+  public  void insertAfter(String value , String newdata){
+    LinkedListNode node = new LinkedListNode(newdata);
+    if (head == null){
+
+    }
+    else if (head.getData()==value) {
+      head.setNext(node);
+      head = node;
+
+    } else {
+      LinkedListNode current = head;
+      while (current != null) {
+        if (current.getData()==value) {
+          node.setNext(current.getNext());
+          current.setNext(node);
+
+        }
+        current = current.getNext();
+      }
+
+    }
+
+  }
+
 
 }
