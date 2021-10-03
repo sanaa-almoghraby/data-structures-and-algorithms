@@ -45,4 +45,4 @@ The class contain the following methods
   
 | Challenge | link     |
 | :---- | --------:|
-| Challenge | [link]()    |
+| Challenge06 | [link]()    |
