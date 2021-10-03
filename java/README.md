@@ -17,7 +17,7 @@
 # Singly Linked List
 <!-- Short summary or background information -->
 
-## Challenge05
+# Challenge05
 <!-- Description of the challenge -->
 Create a Node class that has properties for the value stored in the Node, and a pointer to the next Node.
 
@@ -41,3 +41,8 @@ The class contain the following methods
   Arguments: none
   Returns: a string representing all the values in the Linked List, formatted as:
   "{ a } -> { b } -> { c } -> NULL"
+  
+  
+| Challenge | link     |
+| :---- | --------:|
+| Challenge | [link]()    |
