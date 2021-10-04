@@ -6,6 +6,7 @@ import org.w3c.dom.Node;
 public class LinkedList {
 
   public LinkedListNode head;
+  int listSize = 0;
 
   public LinkedList() {
   }
@@ -24,16 +25,15 @@ public class LinkedList {
         current = current.getNext();
       }
 
-      LinkedListNode node = new LinkedListNode( data);
+      LinkedListNode node = new LinkedListNode(data);
       current.setNext(node);
 
     }
+    listSize++;
   }
 
 
-
-
-  public boolean includes( String val) {
+  public boolean includes(String val) {
 
     LinkedListNode current;
     current = head;
@@ -46,7 +46,6 @@ public class LinkedList {
     }
     return false;
   }
-
 
 
   public void stringOutput() {
@@ -62,13 +61,14 @@ public class LinkedList {
 
       while (current != null) {
 
-        System.out.print("{"+current.getData()+"}" + " -> ");
+        System.out.print("{" + current.getData() + "}" + " -> ");
         current = current.getNext();
       }
 
       System.out.println("NULL");
     }
   }
+
   public void append(String value) {
     LinkedListNode node = new LinkedListNode(value);
 
@@ -79,25 +79,29 @@ public class LinkedList {
       while (current.getNext() != null) {
         current = current.getNext();
       }
-        current.setNext(node);
+      current.setNext(node);
 
 
     }
   }
-  public void insertBefore(String value , String newdata){
+
+  public void insertBefore(String value, String newdata) {
     LinkedListNode node = new LinkedListNode(newdata);
-    if (head == null){
+    if (head == null) {
       head = node;
       node.setData(newdata);
-    }else if(head.getData()==value){
+      listSize++;
+    } else if (head.getData() == value) {
       node.setNext(head);
       head = node;
-    }else{
+    } else {
       LinkedListNode current = head;
-      while (current.getNext() != null){
-        if (current.getNext().getData()==value) {
+      while (current.getNext() != null) {
+        if (current.getNext().getData() == value) {
           node.setNext(current.getNext());
           current.setNext(node);
+          listSize++;
+          break;
         }
         current = current.getNext();
       }
@@ -105,19 +109,19 @@ public class LinkedList {
     }
 
   }
-  public  void insertAfter(String value , String newdata){
-    LinkedListNode node = new LinkedListNode(newdata);
-    if (head == null){
 
-    }
-    else if (head.getData()==value) {
+  public void insertAfter(String value, String newdata) {
+    LinkedListNode node = new LinkedListNode(newdata);
+    if (head == null) {
+
+    } else if (head.getData() == value) {
       head.setNext(node);
       head = node;
 
     } else {
       LinkedListNode current = head;
       while (current != null) {
-        if (current.getData()==value) {
+        if (current.getData() == value) {
           node.setNext(current.getNext());
           current.setNext(node);
 
@@ -127,6 +131,27 @@ public class LinkedList {
 
     }
 
+  }
+
+  public String kthFromEnd(int k) {
+    LinkedListNode current = head;
+    int counter = 0;
+    while (current.getNext()!= null) {
+      current = current.getNext();
+      counter++;
+    }
+    if (k > counter || k < 0) {
+      return "Exception";
+    } else {
+      current = head;
+      for (int i = 0; i <= counter - k; i++) {
+        if (i == counter - k) {
+          return "{" + current.getData() + "}";
+        }
+        current = current.next;
+      }
+    }
+    return "Exception";
   }
 
 

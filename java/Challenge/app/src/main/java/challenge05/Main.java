@@ -15,11 +15,16 @@ public class Main {
     linkedList.insert("S");
     linkedList.insert("A");
     linkedList.insert("N");
-    linkedList.insert("A");
-    linkedList.insert("A");
+    linkedList.insert("C");
+    linkedList.insert("Q");
 
+
+    linkedList.append("O");
+    linkedList.insertBefore("N","L");
+    linkedList.insertAfter("N","W");
     linkedList.stringOutput();
-
+    String sss=linkedList.kthFromEnd(0);
+    System.out.println(sss);
     System.out.println("  " + linkedList.includes("A") + "  ");
   }
 }
