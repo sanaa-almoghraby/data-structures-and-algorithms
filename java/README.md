@@ -46,3 +46,4 @@ The class contain the following methods
 | Challenge | link     |
 | :---- | --------:|
 | Challenge06 | [link]()    |
+| Challenge07 | [link](https://github.com/sanaa-almoghraby/data-structures-and-algorithms/pull/20)|
