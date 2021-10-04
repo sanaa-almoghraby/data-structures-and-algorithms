@@ -41,3 +41,10 @@ The class contain the following methods
   Arguments: none
   Returns: a string representing all the values in the Linked List, formatted as:
   "{ a } -> { b } -> { c } -> NULL"
+
+    
+| Challenge | link     |
+| :---- | --------:|
+| Challenge06 | [link](https://github.com/sanaa-almoghraby/data-structures-and-algorithms/tree/linked-list-insertions)    |
+| Challenge07 | [link](https://github.com/sanaa-almoghraby/data-structures-and-algorithms/pull/20)|
+
