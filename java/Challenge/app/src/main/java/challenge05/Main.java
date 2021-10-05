@@ -9,6 +9,7 @@ import challenge05.structure.LinkedList;
 public class Main {
 
   public static void main(String[] args) {
+    LinkedList list = new LinkedList();
 
     LinkedList linkedList = new LinkedList();
 
@@ -17,14 +18,34 @@ public class Main {
     linkedList.insert("N");
     linkedList.insert("C");
     linkedList.insert("Q");
+    LinkedList linkedList2 = new LinkedList();
 
 
-    linkedList.append("O");
-    linkedList.insertBefore("N","L");
-    linkedList.insertAfter("N","W");
+    linkedList2.insert("K");
+    linkedList2.insert("D");
+    linkedList2.insert("O");
+    linkedList2.insert("B");
+    linkedList2.insert("Z");
+
+
+//    linkedList.append("O");
+//    linkedList.insertBefore("N","L");
+//    linkedList.insertAfter("N","W");
+//
     linkedList.stringOutput();
-    String sss=linkedList.kthFromEnd(0);
-    System.out.println(sss);
+    linkedList2.stringOutput();
+
+
+//    linkedList.merge(linkedList,linkedList2);
+    System.out.println(linkedList.stringOutput());
+
+//    String sss=linkedList.kthFromEnd(0);
+//    System.out.println(sss);
+
+    System.out.println(linkedList2.stringOutput());
+    list.head = list.merge(linkedList, linkedList2);
+    System.out.println("List for Zip function ==> ");
+    System.out.println(list.stringOutput());
     System.out.println("  " + linkedList.includes("A") + "  ");
   }
 }
