@@ -48,24 +48,21 @@ public class LinkedList {
   }
 
 
-  public void stringOutput() {
-
+  public String stringOutput() {
+    String output = "";
     if (head == null) {
-      System.out.println("List is empty");
+      return "List is empty";
     } else {
       LinkedListNode current;
       current = head;
 
-
-      System.out.print("HEAD -> ");
-
       while (current != null) {
 
-        System.out.print("{" + current.getData() + "}" + " -> ");
+        output += "{" + current.getData() + "}" + " -> ";
         current = current.getNext();
       }
 
-      System.out.println("NULL");
+      return "HEAD ->" + output + "NULL";
     }
   }
 
@@ -136,7 +133,7 @@ public class LinkedList {
   public String kthFromEnd(int k) {
     LinkedListNode current = head;
     int counter = 0;
-    while (current.getNext()!= null) {
+    while (current.getNext() != null) {
       current = current.getNext();
       counter++;
     }
@@ -154,5 +151,45 @@ public class LinkedList {
     return "Exception";
   }
 
+  //  public void merge(LinkedList q,LinkedList list2) {
+//    LinkedListNode p_curr = head, q_curr = q.head;
+//    LinkedListNode p_next, q_next;
+//    // While there are available positions in p;
+//    while (p_curr != null && q_curr != null) {
+//      // Save next pointers
+//      p_next = p_curr.getNext();
+//      q_next = q_curr.getNext();
+//      // make q_curr as next of p_curr
+//      q_curr.setNext(p_next);
+//      ; // change next pointer of q_curr
+//      p_curr.setNext(q_curr);
+//      // change next pointer of p_curr
+//      // update current pointers for next iteration
+//      p_curr = p_next;
+//      q_curr = q_next;
+//    }
+//    q.head = q_curr;
+//  }
+  public LinkedListNode merge(LinkedList list1, LinkedList list2) {
+    if (list1.head == null) {
+      return list2.head;
+    } else if (list2.head == null) {
+      return list1.head;
+    } else {
+      LinkedListNode current1 = list1.head;
+      LinkedListNode current2 = list2.head;
+      LinkedListNode list1Next, list2Next;
+      while (current1 != null && current2 != null) {
+        list1Next = current1.getNext();
+        list2Next = current2.getNext();
+        current2.setNext(list1Next);
+        current1.setNext(current2);
+        current1 = list1Next;
+        current2 = list2Next;
+      }
+      return list1.head;
+    }
+  }
 
 }
+
