@@ -1,4 +1,9 @@
 package stack;
 
-public class StackNode {
+import Data.Node;
+
+public class StackNode extends Node {
+  public StackNode(String data) {
+    super(data);
+  }
 }

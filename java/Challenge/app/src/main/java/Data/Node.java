@@ -27,7 +27,7 @@ public class Node {
   @Override
   public String toString() {
     return "Node{" +
-      "queue.data='" + data + '\'' +
+      "queue.queue.data='" + data + '\'' +
       '}';
   }
 }
