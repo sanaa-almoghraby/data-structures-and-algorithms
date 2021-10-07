@@ -1,6 +1,6 @@
 package linkedlist.structure;
 
-import linkedlist.structure.data.LinkedListNode;
+import linkedlist.data.LinkedListNode;
 
 public class LinkedList {
 

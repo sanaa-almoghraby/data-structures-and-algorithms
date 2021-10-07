@@ -1,4 +1,4 @@
-package linkedlist.structure.data;
+package linkedlist.data;
 
 public class LinkedListNode {
   public String data;

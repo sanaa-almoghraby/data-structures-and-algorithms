@@ -5,7 +5,9 @@ package challenge05;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
-import challenge05.structure.LinkedList;
+import linkedlist.structure.LinkedList;
+import queue.Queue;
+import stack.Stack;
 
 class MainTest {
   //    @Test void appHasAGreeting() {
@@ -31,6 +33,43 @@ class MainTest {
     linkedList2.insert("Z");
     fun.head = fun.merge(linkedList1, linkedList2);
     assertEquals("HEAD ->{S} -> {K} -> {A} -> {D} -> {N} -> {O} -> {A} -> {B} -> {A} -> {Z} -> NULL", fun.stringOutput());
+  }
+  @Test
+  void stackTest() {
+
+    Stack stack = new Stack();
+    assertTrue(stack.isEmpty());
+    assertEquals(" stack is empty", stack.pop());
+
+    stack.push("sanaa");
+    stack.push("good");
+
+
+    assertEquals("good", stack.peek());
+    assertFalse(stack.isEmpty());
+
+    assertEquals("good",stack.pop());
+    assertEquals("sanaa", stack.peek());
+
+  }
+  @Test
+  void queueTest() {
+
+    Queue queue = new Queue();
+    assertTrue(queue.isEmpty());
+    assertEquals("Queue is empty", queue.dequeue());
+
+    queue.enqueue("sanaa");
+    queue.enqueue("good");
+
+
+    assertEquals("sanaa", queue.peek());
+    assertFalse(queue.isEmpty());
+
+    assertEquals("sanaa",queue.dequeue());
+    assertEquals("good", queue.peek());
+
+
   }
 
 
