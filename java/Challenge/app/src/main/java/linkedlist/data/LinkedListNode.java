@@ -1,4 +1,4 @@
-package challenge05.data;
+package linkedlist.structure.data;
 
 public class LinkedListNode {
   public String data;
