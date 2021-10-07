@@ -1,7 +1,6 @@
-package challenge05.structure;
+package linkedlist.structure;
 
-import challenge05.data.LinkedListNode;
-import org.w3c.dom.Node;
+import linkedlist.structure.data.LinkedListNode;
 
 public class LinkedList {
 
@@ -190,6 +189,65 @@ public class LinkedList {
       return list1.head;
     }
   }
+
+  public LinkedList reverse(LinkedList list) {
+    if (list.head == null) return null;
+    int count = 0;
+    LinkedListNode current = list.head;
+    while (current != null) {
+      count += 1;
+      current = current.next;
+    }
+    String newArr[] = new String[count];
+    current = list.head;
+    for (int i = 0; i < count; i++) {
+      newArr[i] = current.getData();
+      current = current.next;
+    }
+    LinkedList newLinkedList = new LinkedList();
+    for (int i = newArr.length - 1; i >= 0; i--) {
+      newLinkedList.append(newArr[i]);
+    }
+    return newLinkedList;
+  }
+
+
+//  public static LinkedList zipLists(LinkedList list1, LinkedList list2) throws Exception {
+//    if (list1.listSize == 0 && list2.listSize == 0) {
+//      throw new Exception("You can't zip two empty lists");
+//    } else if (list1.listSize == 0)
+//      return list2;
+//    else if (list2.listSize == 0)
+//      return list1;
+//    else {
+//      LinkedListNode current = list1.head;
+//      LinkedListNode current2 = list2.head;
+//      int length1 = list1.listSize;
+//      int length2 = list2.listSize;
+//      int index = 0;
+//
+//      while (current.getNext() != null) {
+//        list1.insertAfter(index, current2.getData());
+//        if (current2.getNext() == null)
+//          break;
+//        else {
+//          current2 = current2.getNext();
+//          current = current.getNext().getNext();
+//          index += 2;
+//        }
+//      }
+//
+//      if (length2 >= length1)
+//        while (current2 != null) {
+//          list1.append(current2.getData());
+//          current2 = current2.getNext();
+//        }
+//
+//      return list1;
+//    }
+//  }
+//
+
 
 }
 
