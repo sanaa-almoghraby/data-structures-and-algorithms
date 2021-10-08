@@ -98,7 +98,7 @@ list.insertBefore("a","w");
 
     assertEquals("{s}", list.kthFromEnd(2), "return first element in the list");
   }
-  
+
 
 
   @Test
