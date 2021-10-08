@@ -5,7 +5,7 @@ kthFromEnd(int) write a method that Return the node’s value that is k (given n
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
 
-![](../img/code07.png)
+![](../img/code007.png)
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
