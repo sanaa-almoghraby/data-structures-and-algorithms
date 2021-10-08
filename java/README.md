@@ -44,7 +44,7 @@ The class contain the following methods
 
 | Challenge | link     |
 | :---- | --------:|
-| Challenge06 | [link](https://github.com/sanaa-almoghraby/data-structures-and-algorithms/tree/linked-list-insertions)    |
+| Challenge06 | [link](https://github.com/sanaa-almoghraby/data-structures-and-algorithms/tree/main/java/Challenge06)    |
 | Challenge07 | [link](https://github.com/sanaa-almoghraby/data-structures-and-algorithms/blob/main/java/Challenge/README.md)|
 |Challenge08 |[link](https://github.com/sanaa-almoghraby/data-structures-and-algorithms/tree/main/java/Challenge8)|
 |Challenge09|[link]()|
