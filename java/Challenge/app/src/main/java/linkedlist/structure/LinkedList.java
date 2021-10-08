@@ -61,7 +61,7 @@ public class LinkedList {
         current = current.getNext();
       }
 
-      return "HEAD ->" + output + "NULL";
+      return "HEAD -> " + output + "NULL";
     }
   }
 
@@ -169,7 +169,7 @@ public class LinkedList {
 //    }
 //    q.head = q_curr;
 //  }
-  public LinkedListNode merge(LinkedList list1, LinkedList list2) {
+  public static LinkedListNode merge(LinkedList list1, LinkedList list2) {
     if (list1.head == null) {
       return list2.head;
     } else if (list2.head == null) {

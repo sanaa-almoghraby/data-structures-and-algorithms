@@ -34,6 +34,73 @@ class MainTest {
     fun.head = fun.merge(linkedList1, linkedList2);
     assertEquals("HEAD ->{S} -> {K} -> {A} -> {D} -> {N} -> {O} -> {A} -> {B} -> {A} -> {Z} -> NULL", fun.stringOutput());
   }
+
+  @Test
+  public void insertData() {
+    LinkedList list = new LinkedList();
+    list.insert("sanaa");
+    assertTrue(list.includes("sanaa"), "The method should return true");
+  }
+  @Test
+  public void first() {
+    LinkedList list = new LinkedList();
+    list.insert("A");
+    list.insert("B");
+    list.insert("C");
+    assertEquals("A", list.head.getData(), "The method should return 'C'");
+  }
+  @Test
+  public void printList() {
+    LinkedList list = new LinkedList();
+    list.insert("S");
+    list.insert("o");
+    list.insert("s");
+    list.insert("o");
+    assertEquals("HEAD -> {S} -> {o} -> {s} -> {o} -> NULL", list.stringOutput(), "");
+  }
+  @Test
+  public void addAtEnd() {
+    LinkedList list = new LinkedList();
+    list.append("S");
+    list.append("A");
+
+    assertEquals("HEAD -> {S} -> {A} -> NULL", list.stringOutput(), "Method should insert at the end of the liked list");
+  }
+
+  @Test
+  public void insertBefore() {
+    LinkedList list = new LinkedList();
+    list.append("s");
+    list.append("a");
+    list.append("n");
+list.insertBefore("a","w");
+    assertEquals("HEAD -> {s} -> {w} -> {a} -> {n} -> NULL",list.stringOutput(), "Method should insert 'W' before 'Y'");
+    System.out.println(list);
+  }
+
+  @Test
+  public void insertAfter() {
+    LinkedList list = new LinkedList();
+    list.append("s");
+    list.append("a");
+    list.append("n");
+    list.insertAfter("a", "w");
+    assertEquals("HEAD -> {s} -> {a} -> {w} -> {n} -> NULL",list.stringOutput(), "Method should insert 'W' after 'Y'");
+    System.out.println(list);
+  }
+
+  @Test
+  public void testkthFromEnd() {
+    LinkedList list = new LinkedList();
+    list.append("s");
+    list.append("a");
+    list.append("n");
+
+    assertEquals("{s}", list.kthFromEnd(2), "return first element in the list");
+  }
+  
+
+
   @Test
   void stackTest() {
 
