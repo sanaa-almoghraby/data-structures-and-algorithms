@@ -4,6 +4,7 @@ kthFromEnd(int) write a method that Return the node’s value that is k (given n
 
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
+
 ![](../img/code07.png)
 
 ## Approach & Efficiency
@@ -11,6 +12,7 @@ kthFromEnd(int) write a method that Return the node’s value that is k (given n
 2 : 4 hour
 =============================================================================
 # Challenge Summary
+
 <!-- Description of the challenge -->
 method responsible about zipping two linked list and return the head for the zipped linked list
 ## Whiteboard Process
