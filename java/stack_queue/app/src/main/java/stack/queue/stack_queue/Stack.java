@@ -1,18 +1,18 @@
 package stack.queue.stack_queue;
 
+
 import stack.queue.Node_data.Node;
+
 
 
 
 public class Stack {
   private Node top;
 
-  public Stack() {
-  }
-
   public void push(String data) {
     if (isEmpty()) {
       top= new Node(data);
+
     } else {
       Node node = new Node(data);
       node.setNext(top);
@@ -45,4 +45,5 @@ public class Stack {
   public Node getTop() {
     return top;
   }
+
 }

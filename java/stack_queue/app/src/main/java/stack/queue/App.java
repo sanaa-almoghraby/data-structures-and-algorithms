@@ -3,8 +3,12 @@
  */
 package stack.queue;
 
+
 //import stack.queue.stack_queue.Queue;
 import stack.queue.stack_queue.pseudoQueue;
+import stack.queue.stack_queue.Queue;
+import stack.queue.stack_queue.Stack;
+
 
 public class App {
     public String getGreeting() {
@@ -14,6 +18,7 @@ public class App {
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
 
+   
 
       pseudoQueue newQueue = new pseudoQueue();
       newQueue.enQueue("S");
@@ -26,6 +31,8 @@ public class App {
       System.out.println(newQueue.printData());
 newQueue.deQueue();
       System.out.println(newQueue.printData());
+
+    
     }
 
 }
