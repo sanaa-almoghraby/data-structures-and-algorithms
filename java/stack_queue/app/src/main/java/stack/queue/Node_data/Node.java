@@ -1,12 +1,14 @@
 package stack.queue.Node_data;
 
 public class Node {
-  String data;
-  Node next;
+  private String data; // the data
+  private Node next;   // the reference
+
 
   public Node(String data) {
     this.data = data;
   }
+
 
   public String getData() {
     return data;
@@ -24,10 +26,5 @@ public class Node {
     this.next = next;
   }
 
-  @Override
-  public String toString() {
-    return "Node{" +
-      "data='" + data + '\'' +
-      '}';
-  }
+
 }

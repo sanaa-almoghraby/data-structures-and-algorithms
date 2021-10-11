@@ -4,6 +4,8 @@
 package stack.queue;
 
 import stack.queue.stack_queue.Queue;
+import stack.queue.stack_queue.Stack;
+
 
 public class App {
     public String getGreeting() {
@@ -13,17 +15,34 @@ public class App {
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
 
+      Queue newQueue = new Queue();
+      newQueue.enQueue("S");
+      newQueue.enQueue("N");
+      newQueue.enQueue("A");
+      newQueue.enQueue("A");
+      System.out.println(newQueue.deQueue());
+      System.out.println(newQueue.deQueue());
+      System.out.println(newQueue.deQueue());
 
-      Queue osaidQueue = new Queue();
-      osaidQueue.enQueue("Killing");
-      osaidQueue.enQueue("In");
-      osaidQueue.enQueue("The");
-      osaidQueue.enQueue("Name");
-      osaidQueue.enQueue("Of");
 
-      System.out.println(osaidQueue.isEmpty());
+      //==========================================
+      System.out.println("============================= STACK =================================");
+      Stack stackData = new Stack();
+
+      stackData.push("S");
+      stackData.push("A");
+      stackData.push("N");
+      stackData.push("A");
+      stackData.push("A");
+
+      System.out.println("The top of stack " + stackData.peek());
+
+      System.out.println(stackData.pop());
+
+      System.out.println(stackData.pop());
+      System.out.println(stackData.pop());
+      System.out.println(stackData.pop());
 
 
-    }
     }
 }
