@@ -3,9 +3,9 @@
  */
 package stack.queue;
 
+
 import org.junit.jupiter.api.Test;
-import stack.queue.stack_queue.Queue;
-import stack.queue.stack_queue.Stack;
+
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -15,6 +15,21 @@ class AppTest {
         assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
     }
   @Test
+
+  void pseudoQueueTest() {
+
+
+    pseudoQueue testqueue = new pseudoQueue();
+
+    testqueue.enQueue("ssss");
+    testqueue.enQueue("nnnn");
+
+
+    assertEquals("ssss", testqueue.deQueue());
+
+
+  }
+
   void stackTest() {
 
     Stack stack = new Stack();

@@ -3,6 +3,9 @@
  */
 package stack.queue;
 
+
+//import stack.queue.stack_queue.Queue;
+import stack.queue.stack_queue.pseudoQueue;
 import stack.queue.stack_queue.Queue;
 import stack.queue.stack_queue.Stack;
 
@@ -15,34 +18,21 @@ public class App {
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
 
-      Queue newQueue = new Queue();
+   
+
+      pseudoQueue newQueue = new pseudoQueue();
       newQueue.enQueue("S");
+      newQueue.enQueue("A");
       newQueue.enQueue("N");
       newQueue.enQueue("A");
       newQueue.enQueue("A");
-      System.out.println(newQueue.deQueue());
-      System.out.println(newQueue.deQueue());
-      System.out.println(newQueue.deQueue());
 
 
-      //==========================================
-      System.out.println("============================= STACK =================================");
-      Stack stackData = new Stack();
+      System.out.println(newQueue.printData());
+newQueue.deQueue();
+      System.out.println(newQueue.printData());
 
-      stackData.push("S");
-      stackData.push("A");
-      stackData.push("N");
-      stackData.push("A");
-      stackData.push("A");
-
-      System.out.println("The top of stack " + stackData.peek());
-
-      System.out.println(stackData.pop());
-
-      System.out.println(stackData.pop());
-      System.out.println(stackData.pop());
-      System.out.println(stackData.pop());
-
-
+    
     }
+
 }

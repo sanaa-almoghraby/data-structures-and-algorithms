@@ -1,5 +1,9 @@
 package stack.queue.stack_queue;
+
+
 import stack.queue.Node_data.Node;
+
+
 
 
 public class Stack {
@@ -7,7 +11,8 @@ public class Stack {
 
   public void push(String data) {
     if (isEmpty()) {
-      top = new Node(data);
+      top= new Node(data);
+
     } else {
       Node node = new Node(data);
       node.setNext(top);
@@ -27,7 +32,7 @@ public class Stack {
 
   public String peek() {
     if (isEmpty()) {
-      return "The stack is empty";
+      return "empty";
     } else {
       return top.getData();
     }
@@ -41,10 +46,4 @@ public class Stack {
     return top;
   }
 
-  @Override
-  public String toString() {
-    return "Stack{" +
-      "top=" + top +
-      '}';
-  }
 }
