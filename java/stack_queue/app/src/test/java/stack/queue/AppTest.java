@@ -3,7 +3,10 @@
  */
 package stack.queue;
 
+
 import org.junit.jupiter.api.Test;
+import stack.queue.stack_queue.pseudoQueue;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
@@ -11,4 +14,18 @@ class AppTest {
         App classUnderTest = new App();
         assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
     }
+  @Test
+  void pseudoQueueTest() {
+
+
+    pseudoQueue testqueue = new pseudoQueue();
+
+    testqueue.enQueue("ssss");
+    testqueue.enQueue("nnnn");
+
+
+    assertEquals("ssss", testqueue.deQueue());
+
+
+  }
 }

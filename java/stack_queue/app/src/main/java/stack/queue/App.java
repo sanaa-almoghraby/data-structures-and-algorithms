@@ -3,7 +3,8 @@
  */
 package stack.queue;
 
-import stack.queue.stack_queue.Queue;
+//import stack.queue.stack_queue.Queue;
+import stack.queue.stack_queue.pseudoQueue;
 
 public class App {
     public String getGreeting() {
@@ -14,16 +15,17 @@ public class App {
         System.out.println(new App().getGreeting());
 
 
-      Queue osaidQueue = new Queue();
-      osaidQueue.enQueue("Killing");
-      osaidQueue.enQueue("In");
-      osaidQueue.enQueue("The");
-      osaidQueue.enQueue("Name");
-      osaidQueue.enQueue("Of");
-
-      System.out.println(osaidQueue.isEmpty());
+      pseudoQueue newQueue = new pseudoQueue();
+      newQueue.enQueue("S");
+      newQueue.enQueue("A");
+      newQueue.enQueue("N");
+      newQueue.enQueue("A");
+      newQueue.enQueue("A");
 
 
+      System.out.println(newQueue.printData());
+newQueue.deQueue();
+      System.out.println(newQueue.printData());
     }
-    }
+
 }

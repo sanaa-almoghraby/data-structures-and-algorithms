@@ -1,8 +1,8 @@
 package stack.queue.stack_queue;
-import data.Node;
-import stack.data.StackNode;
 
-import org.w3c.dom.Node;
+import stack.queue.Node_data.Node;
+
+
 
 public class Stack {
   private Node top;
@@ -12,10 +12,9 @@ public class Stack {
 
   public void push(String data) {
     if (isEmpty()) {
-      Node node = new StackNode(data);
-      top = node;
+      top= new Node(data);
     } else {
-      Node node = new StackNode(data);
+      Node node = new Node(data);
       node.setNext(top);
       top = node;
     }
@@ -23,7 +22,7 @@ public class Stack {
 
   public String pop() {
     if (isEmpty()) {
-      return "The stack is empty";
+      return "empty";
     } else {
       String data = top.getData();
       top = top.getNext();
@@ -33,7 +32,7 @@ public class Stack {
 
   public String peek() {
     if (isEmpty()) {
-      return "The stack is empty";
+      return "empty";
     } else {
       return top.getData();
     }
@@ -41,5 +40,9 @@ public class Stack {
 
   public boolean isEmpty() {
     return top == null;
+  }
+
+  public Node getTop() {
+    return top;
   }
 }
