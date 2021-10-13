@@ -3,23 +3,23 @@ import stack.queue.Node_data.Node;
 
 //import stack.queue.Node_data.Node;
 
-public class pseudoQueue {
+public class pseudoQueue<T>{
 
-  private Stack stack1 = new Stack();
-  private Stack stack2 = new Stack();
+  private Stack<T> stack1 = new Stack();
+  private Stack<T> stack2 = new Stack();
   private Node head;
 
 
-  public void enQueue(String data) {
+  public void enQueue(T data){
 
     stack1.push(data);
   }
 
-  public String deQueue() {
+  public T deQueue() {
     while(stack1.getTop() != null){
       stack2.push(stack1.pop());
     }
-    String value = stack2.pop();
+    T value = stack2.pop();
     while(stack2.getTop() != null){
       stack1.push(stack2.pop());
     }
