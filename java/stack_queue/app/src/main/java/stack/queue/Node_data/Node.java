@@ -1,8 +1,10 @@
 package stack.queue.Node_data;
 
+
 public class Node<T> {
   T data;
   Node<T> next;
+
 
   public Node(T data) {
     this.data = data;
@@ -24,10 +26,5 @@ public class Node<T> {
     this.next = next;
   }
 
-  @Override
-  public String toString() {
-    return "Node{" +
-      "data='" + data + '\'' +
-      '}';
-  }
+
 }
