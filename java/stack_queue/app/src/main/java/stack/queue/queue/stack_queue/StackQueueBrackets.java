@@ -1,4 +1,4 @@
-package stack.queue.stack_queue;
+package stack.queue.queue.stack_queue;
 
 public class StackQueueBrackets {
   public static boolean stackQueueBrackets(String s){

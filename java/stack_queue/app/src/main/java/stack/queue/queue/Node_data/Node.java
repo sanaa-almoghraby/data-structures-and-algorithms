@@ -1,4 +1,4 @@
-package stack.queue.Node_data;
+package stack.queue.queue.Node_data;
 
 
 public class Node<T> {

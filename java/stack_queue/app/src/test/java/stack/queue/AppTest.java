@@ -5,8 +5,9 @@ package stack.queue;
 
 
 import org.junit.jupiter.api.Test;
-import stack.queue.stack_queue.StackQueueBrackets;
-import stack.queue.stack_queue.pseudoQueue;
+import stack.queue.queue.App;
+import stack.queue.queue.stack_queue.pseudoQueue;
+import stack.queue.queue.stack_queue.StackQueueBrackets;
 
 import static org.junit.jupiter.api.Assertions.*;
 
