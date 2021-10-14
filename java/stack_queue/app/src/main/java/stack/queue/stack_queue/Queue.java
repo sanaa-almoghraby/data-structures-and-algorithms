@@ -2,41 +2,49 @@ package stack.queue.stack_queue;
 
 import stack.queue.Node_data.Node;
 
-public class Queue {
+public class Queue<T> {
 
-  private Node front;
-  private Node rear;
+  private Node<T> front;
+  private Node<T> rear;
 
   public Queue() {
   }
 
-  public void enqueue(String data) {
+  public void enqueue(T data) {
     if (isEmpty()) {
-      Node node = new Node(data);
+      Node<T> node = new Node(data);
       front = node;
       rear = node;
     } else {
-      Node node = new Node(data);
+      Node<T> node = new Node(data);
       rear.setNext(node);
       rear = node;
     }
   }
 
-  public String dequeue() {
+  public T dequeue() {
     if (isEmpty()) {
-      return "Queue is empty";
+      return null;
     } else {
-      String data = front.getData();
+      T data = front.getData();
       front = front.getNext();
       return data;
     }
   }
 
   public String peek() {
-    return front.getData();
+    return (String) front.getData();
   }
 
   public boolean isEmpty() {
     return front == null;
+  }
+
+  @Override
+  public String toString() {
+    return "Queue{" +
+      "front=" + front +
+      ", rear=" + rear +
+      '}';
   }
 }

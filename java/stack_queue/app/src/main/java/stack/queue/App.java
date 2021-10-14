@@ -4,6 +4,7 @@
 package stack.queue;
 
 //import stack.queue.stack_queue.Queue;
+import stack.queue.stack_queue.StackQueueBrackets;
 import stack.queue.stack_queue.pseudoQueue;
 
 public class App {
@@ -26,6 +27,11 @@ public class App {
       System.out.println(newQueue.printData());
 newQueue.deQueue();
       System.out.println(newQueue.printData());
+
+      StackQueueBrackets data2 =new StackQueueBrackets();
+
+      System.out.println(data2.stackQueueBrackets("{(})"));
+
     }
 
 }

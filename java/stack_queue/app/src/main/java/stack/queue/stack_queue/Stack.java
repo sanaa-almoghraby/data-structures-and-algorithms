@@ -3,36 +3,35 @@ package stack.queue.stack_queue;
 import stack.queue.Node_data.Node;
 
 
-
-public class Stack {
-  private Node top;
+public class Stack<T> {
+  private Node<T> top;
 
   public Stack() {
   }
 
-  public void push(String data) {
+  public void push(T data) {
     if (isEmpty()) {
       top= new Node(data);
     } else {
-      Node node = new Node(data);
+      Node<T> node = new Node(data);
       node.setNext(top);
       top = node;
     }
   }
 
-  public String pop() {
+  public T pop() {
     if (isEmpty()) {
-      return "empty";
+      return null;
     } else {
-      String data = top.getData();
+      T data = top.getData();
       top = top.getNext();
       return data;
     }
   }
 
-  public String peek() {
+  public T peek() {
     if (isEmpty()) {
-      return "empty";
+      return null;
     } else {
       return top.getData();
     }
