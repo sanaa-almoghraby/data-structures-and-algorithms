@@ -17,7 +17,7 @@
 # Singly Linked List
 <!-- Short summary or background information -->
 
-## Challenge05
+# Challenge05
 <!-- Description of the challenge -->
 Create a Node class that has properties for the value stored in the Node, and a pointer to the next Node.
 
@@ -42,9 +42,12 @@ The class contain the following methods
   Returns: a string representing all the values in the Linked List, formatted as:
   "{ a } -> { b } -> { c } -> NULL"
 
-    
 | Challenge | link     |
 | :---- | --------:|
-| Challenge06 | [link](https://github.com/sanaa-almoghraby/data-structures-and-algorithms/tree/linked-list-insertions)    |
-| Challenge07 | [link](https://github.com/sanaa-almoghraby/data-structures-and-algorithms/pull/20)|
+| Challenge06 | [link](https://github.com/sanaa-almoghraby/data-structures-and-algorithms/tree/main/java/Challenge06)    |
+| Challenge07 | [link](https://github.com/sanaa-almoghraby/data-structures-and-algorithms/blob/main/java/Challenge/README.md)|
+|Challenge08 |[link](https://github.com/sanaa-almoghraby/data-structures-and-algorithms/tree/main/java/Challenge8)|
+|Challenge09|[link]()|
+|Challenge10|[link](https://github.com/sanaa-almoghraby/data-structures-and-algorithms/tree/main/java/Challenge10)|
+|Challenge11|[link](https://github.com/sanaa-almoghraby/data-structures-and-algorithms/tree/main/java/Challenge11)|
 
