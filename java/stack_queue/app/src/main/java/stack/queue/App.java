@@ -3,12 +3,8 @@
  */
 package stack.queue;
 
-
 //import stack.queue.stack_queue.Queue;
-import stack.queue.stack_queue.pseudoQueue;
-import stack.queue.stack_queue.Queue;
-import stack.queue.stack_queue.Stack;
-
+import stack.queue.stack_queue.*;
 
 public class App {
     public String getGreeting() {
@@ -18,7 +14,6 @@ public class App {
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
 
-   
 
       pseudoQueue newQueue = new pseudoQueue();
       newQueue.enQueue("S");
@@ -32,7 +27,17 @@ public class App {
 newQueue.deQueue();
       System.out.println(newQueue.printData());
 
-    
+
+      //================================================================
+
+      Animal cat = new Cat("fshfhsy");
+      Animal dog = new Dog("dogdog");
+      AnimalShelter.enqueue(cat);
+      AnimalShelter.enqueue(dog);
+      System.out.println(AnimalShelter.getAnimalQueue().toString());
+      System.out.println(AnimalShelter.dequeue().getName());
+      System.out.println(AnimalShelter.dequeue().getName());
+
     }
 
 }

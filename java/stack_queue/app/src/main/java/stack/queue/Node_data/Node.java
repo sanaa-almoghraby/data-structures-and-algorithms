@@ -1,28 +1,28 @@
 package stack.queue.Node_data;
 
-public class Node {
-  private String data; // the data
-  private Node next;   // the reference
+
+public class Node<T> {
+  T data;
+  Node<T> next;
 
 
-  public Node(String data) {
+  public Node(T data) {
     this.data = data;
   }
 
-
-  public String getData() {
+  public T getData() {
     return data;
   }
 
-  public void setData(String data) {
+  public void setData(T data) {
     this.data = data;
   }
 
-  public Node getNext() {
+  public Node<T> getNext() {
     return next;
   }
 
-  public void setNext(Node next) {
+  public void setNext(Node<T> next) {
     this.next = next;
   }
 
