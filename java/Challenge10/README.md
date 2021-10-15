@@ -1,5 +1,7 @@
 # Stacks and Queues
 #### A stack is a data structure that consists of Nodes. Each Node references the next Node in the stack, but does not reference its previous.
+LIFO
+
 
 #### Queues:
 FIFO
@@ -35,3 +37,9 @@ Returns: the value from node from the top of the stack
 Removes the node from the top of the stack
 Should raise exception when called on empty stack
 3. peek
+
+
+### 2. Queue
+1. enqueue
+2. dequeue
+3.peek
