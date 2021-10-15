@@ -1,16 +1,11 @@
-package stack.queue.stack_queue;
+package stack.queue.queue.stack_queue;
 
-import stack.queue.Node_data.Node;
+import stack.queue.queue.Node_data.Node;
 
 public class Queue<T> {
 
   private Node<T> front;
   private Node<T> rear;
-  private int size;
-
-  public int getSize() {
-    return size;
-  }
 
   public Queue() {
   }
@@ -25,7 +20,6 @@ public class Queue<T> {
       rear.setNext(node);
       rear = node;
     }
-    size++;
   }
 
   public T dequeue() {
@@ -34,29 +28,12 @@ public class Queue<T> {
     } else {
       T data = front.getData();
       front = front.getNext();
-      size--;
       return data;
     }
   }
 
-  public Node<T> getFront() {
-    return front;
-  }
-
-  public void setFront(Node<T> front) {
-    this.front = front;
-  }
-
   public String peek() {
     return (String) front.getData();
-  }
-
-  public Node<T> getRear() {
-    return rear;
-  }
-
-  public void setRear(Node<T> rear) {
-    this.rear = rear;
   }
 
   public boolean isEmpty() {

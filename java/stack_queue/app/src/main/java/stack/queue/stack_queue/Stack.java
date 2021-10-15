@@ -1,11 +1,10 @@
-package stack.queue.stack_queue;
+package stack.queue.queue.stack_queue;
 
-import stack.queue.Node_data.Node;
+import stack.queue.queue.Node_data.Node;
 
 
 public class Stack<T> {
   private Node<T> top;
-  private int size;
 
   public Stack() {
   }
@@ -18,7 +17,6 @@ public class Stack<T> {
       node.setNext(top);
       top = node;
     }
-    size++;
   }
 
   public T pop() {
@@ -27,10 +25,8 @@ public class Stack<T> {
     } else {
       T data = top.getData();
       top = top.getNext();
-      size--;
       return data;
     }
-
   }
 
   public T peek() {
@@ -47,9 +43,5 @@ public class Stack<T> {
 
   public Node getTop() {
     return top;
-  }
-
-  public int getSize() {
-    return size;
   }
 }
