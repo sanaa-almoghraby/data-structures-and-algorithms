@@ -4,7 +4,7 @@
 package stack.queue;
 
 //import stack.queue.stack_queue.Queue;
-import stack.queue.stack_queue.pseudoQueue;
+import stack.queue.stack_queue.*;
 
 public class App {
     public String getGreeting() {
@@ -26,6 +26,18 @@ public class App {
       System.out.println(newQueue.printData());
 newQueue.deQueue();
       System.out.println(newQueue.printData());
+
+
+      //================================================================
+
+      Animal cat = new Cat("fshfhsy");
+      Animal dog = new Dog("dogdog");
+      AnimalShelter.enqueue(cat);
+      AnimalShelter.enqueue(dog);
+      System.out.println(AnimalShelter.getAnimalQueue().toString());
+      System.out.println(AnimalShelter.dequeue().getName());
+      System.out.println(AnimalShelter.dequeue().getName());
+
     }
 
 }
