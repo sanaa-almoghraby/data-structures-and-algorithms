@@ -3,6 +3,7 @@ import stack.queue.Node_data.Node;
 
 //import stack.queue.Node_data.Node;
 
+
 public class pseudoQueue<T>{
 
   private Stack<T> stack1 = new Stack();

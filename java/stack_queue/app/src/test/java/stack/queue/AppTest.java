@@ -7,9 +7,18 @@ package stack.queue;
 import stack.queue.stack_queue.StackQueueBrackets;
 import stack.queue.stack_queue.pseudoQueue;
 
-public class App {
-    public String getGreeting() {
-        return "Hello World!";
+import org.junit.jupiter.api.Test;
+import stack.queue.stack_queue.StackQueueBrackets;
+import stack.queue.stack_queue.pseudoQueue;
+
+
+import static org.junit.jupiter.api.Assertions.*;
+
+class AppTest {
+    @Test void appHasAGreeting() {
+        App classUnderTest = new App();
+        assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
+
     }
 
     public static void main(String[] args) {
@@ -23,16 +32,13 @@ public class App {
       newQueue.enQueue("A");
       newQueue.enQueue("A");
 
+  @Test
+  public void testStackQueueBrackets(){
+    StackQueueBrackets data2=new StackQueueBrackets();
+    assertFalse(data2.stackQueueBrackets("[({}]"),"false");
+    assertTrue(data2.stackQueueBrackets("()[]"),"true");
 
-      System.out.println(newQueue.printData());
-newQueue.deQueue();
-      System.out.println(newQueue.printData());
-      //========================================================================
+  }
 
-StackQueueBrackets data2 =new StackQueueBrackets();
-
-      System.out.println(data2.stackQueueBrackets("{(})"));
-
-    }
-
+  
 }
