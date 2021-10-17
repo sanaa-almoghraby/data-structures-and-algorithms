@@ -4,8 +4,11 @@
 package stack.queue.queue;
 
 //import stack.queue.stack_queue.Queue;
-import stack.queue.queue.stack_queue.pseudoQueue;
-import stack.queue.queue.stack_queue.StackQueueBrackets;
+import stack.queue.stack_queue.StackQueueBrackets;
+import stack.queue.stack_queue.pseudoQueue;
+import stack.queue.stack_queue.Queue;
+import stack.queue.stack_queue.Stack;
+
 
 public class App {
     public String getGreeting() {
@@ -27,6 +30,16 @@ public class App {
       System.out.println(newQueue.printData());
 newQueue.deQueue();
       System.out.println(newQueue.printData());
+
+
+      //========================================================================
+
+StackQueueBrackets data2 =new StackQueueBrackets();
+
+      System.out.println(data2.stackQueueBrackets("{(})"));
+
+
+    
 
       StackQueueBrackets data2 =new StackQueueBrackets();
 

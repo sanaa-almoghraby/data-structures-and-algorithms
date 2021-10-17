@@ -1,7 +1,14 @@
 package stack.queue.queue.stack_queue;
 
+
 import stack.queue.queue.Node_data.Node;
 
+
+public class Stack<T> {
+  private Node<T> top;
+
+  public Stack() {
+  }
 
 public class Stack<T> {
   private Node<T> top;
