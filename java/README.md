@@ -52,9 +52,9 @@ The class contain the following methods
 |Challenge11|[link](https://github.com/sanaa-almoghraby/data-structures-and-algorithms/tree/main/java/Challenge11)|
 |Challenge12|[link]()|
 |Challenge13|[link](https://github.com/sanaa-almoghraby/data-structures-and-algorithms/tree/stack-queue-brackets/java/Callenge13)|
-
 |Challenge13|[link](https://github.com/sanaa-almoghraby/data-structures-and-algorithms/blob/stack-queue-brackets2/java/Challange13/README.md)|
+|Challenge15|[link](https://github.com/sanaa-almoghraby/data-structures-and-algorithms/tree/main/java/Callenge12)|
+|Challenge16|[link](https://github.com/sanaa-almoghraby/data-structures-and-algorithms/tree/main/java/Callenge12)|
 
-|Challenge12|[link](https://github.com/sanaa-almoghraby/data-structures-and-algorithms/tree/main/java/Callenge12)|
 
 
