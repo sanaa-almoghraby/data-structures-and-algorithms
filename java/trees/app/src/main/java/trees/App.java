@@ -45,6 +45,17 @@ public class App {
       System.out.println(newTree2.contains("B"));
 
       System.out.println(newTrees.contains(90));
+      //====================================================================
+      System.out.println("****************************************************************");
+      BinaryTree<String> newTree3 = new BinaryTree<>();
+      newTree3.add(10);
+      newTree3.add(20);
+      newTree3.add(100);
+      newTree3.add(8);
+      newTree3.add(6);
+
+      System.out.println("-------------------");
+      System.out.println("Max value: "+newTree3.findMaxValue());
 
 
 

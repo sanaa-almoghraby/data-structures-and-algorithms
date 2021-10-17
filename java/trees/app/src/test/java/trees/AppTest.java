@@ -11,4 +11,13 @@ class AppTest {
         App classUnderTest = new App();
         assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
     }
+
+    @Test
+  void maxValueTest(){
+      BinaryTree<String> newTree3 = new BinaryTree<>();
+      newTree3.add(10);
+      newTree3.add(20);
+      newTree3.add(100);
+      assertEquals(100,newTree3.findMaxValue());
+    }
 }

@@ -78,5 +78,17 @@ public class BinarySearchTree<T extends Comparable<T>> {
   public boolean isEmpty() {
     return root == null;
   }
+//==================================================================================
+public Integer findMaxValue() {
 
+  return maxValue(root);
+}
+
+  private Integer maxValue(BinaryNode<T> node ) {
+
+    if(node.getRightNode() != null) {
+      return maxValue(node.getRightNode());
+    }
+    return (Integer) node.getData();
+  }
 }
