@@ -8,7 +8,7 @@ public class App {
         return "Hello World!";
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         System.out.println(new App().getGreeting());
 
 
@@ -57,7 +57,14 @@ public class App {
       System.out.println("-------------------");
       System.out.println("Max value: "+newTree3.findMaxValue());
 
-
+//===========================================================================
+      BinaryTree<Integer> newTree4 = new BinaryTree<>();
+      newTree4.add(44);
+      newTree4.add(4);
+      newTree4.add(5);
+      newTree4.add(63);
+      newTree4.add(22);
+      System.out.println(BinaryTree.breadthFirst(newTree4));
 
     }
 }
