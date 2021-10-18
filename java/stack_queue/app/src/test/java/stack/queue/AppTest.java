@@ -9,6 +9,7 @@ import stack.queue.queue.App;
 import stack.queue.queue.stack_queue.pseudoQueue;
 import stack.queue.queue.stack_queue.StackQueueBrackets;
 
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
@@ -17,6 +18,7 @@ class AppTest {
         assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
     }
   @Test
+
   void pseudoQueueTest() {
 
 
@@ -31,6 +33,7 @@ class AppTest {
 
   }
 
+<<<<<<< .merge_file_wGC3wL
   @Test
   public void testStackQueueBrackets(){
     StackQueueBrackets data2=new StackQueueBrackets();
@@ -38,4 +41,43 @@ class AppTest {
     assertTrue(data2.stackQueueBrackets("()[]"),"true");
 
   }
+=======
+  void stackTest() {
+
+    Stack stack = new Stack();
+    assertTrue(stack.isEmpty());
+    assertEquals("empty", stack.pop());
+
+    stack.push("sanaa");
+    stack.push("good");
+
+
+    assertEquals("good", stack.peek());
+    assertFalse(stack.isEmpty());
+
+    assertEquals("good",stack.pop());
+    assertEquals("sanaa", stack.peek());
+
+  }
+  @Test
+  void queueTest() {
+
+    Queue queue = new Queue();
+    assertTrue(queue.isEmpty());
+    assertEquals("empty", queue.deQueue());
+
+    queue.enQueue("sanaa");
+    queue.enQueue("good");
+
+
+    assertEquals("sanaa", queue.peek());
+    assertFalse(queue.isEmpty());
+
+    assertEquals("sanaa",queue.deQueue());
+    assertEquals("good", queue.peek());
+
+
+  }
+
+>>>>>>> .merge_file_9BJ3bM
 }
