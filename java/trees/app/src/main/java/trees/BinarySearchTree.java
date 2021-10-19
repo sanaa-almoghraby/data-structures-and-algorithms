@@ -93,7 +93,7 @@ public class BinarySearchTree<T extends Comparable<T>> {
   public static List<BinaryNode<Integer>> breadthFirst(BinarySearchTree<Integer> tree){
     if (tree.isEmpty())
       System.out.println("empty");
-    return breadthFirst((BinaryNode<Integer>) tree.getRoot());
+    return breadthFirst( tree.getRoot());
   }
 
   private static List<BinaryNode<Integer>> breadthFirst(BinaryNode<Integer> node) {
