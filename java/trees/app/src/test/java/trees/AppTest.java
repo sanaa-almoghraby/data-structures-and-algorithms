@@ -20,4 +20,16 @@ class AppTest {
       newTree3.add(100);
       assertEquals(100,newTree3.findMaxValue());
     }
+  @Test
+  public void breadthFirstTester() {
+    BinaryTree<Integer> newTree4 = new BinaryTree<>();
+    newTree4.add(20);
+    newTree4.add(5);
+    newTree4.add(83);
+    newTree4.add(22);
+    newTree4.add(33);
+
+      assertEquals("[20, 5, 83, 22, 33]", BinaryTree.breadthFirst(newTree4).toString());
+
+  }
 }
