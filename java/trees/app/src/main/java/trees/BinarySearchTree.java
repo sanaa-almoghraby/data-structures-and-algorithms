@@ -1,6 +1,5 @@
 package trees;
 
-import org.w3c.dom.Node;
 import java.util.Queue;
 import java.util.List;
 
@@ -9,7 +8,9 @@ import java.util.LinkedList;
 
 public class BinarySearchTree<T extends Comparable<T>> {
 
+  private static int sum=0;
   private BinaryNode<T> root;
+//  public int sum=0;
 
   public BinaryNode<T> getRoot() {
     return root;
@@ -115,6 +116,18 @@ public class BinarySearchTree<T extends Comparable<T>> {
 
     return list;
   }
+
+
+//  public static int countOdd(BinarySearchTree<Integer> root) {
+//    if (root == null) {
+//      return 0;
+//    }
+//    return countOdd_rek(root.getRoot());
+//  }
+
+//
+
+
 
 }
 

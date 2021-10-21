@@ -71,4 +71,38 @@ public class BinaryTree<T extends Comparable<T>> extends BinarySearchTree {
     postOrderData += root.getData() + " -> ";
     return postOrderData;
   }
+
+//  public static int getSumOdd(BinarySearchTree<Integer> tree) {
+//    Integer sum = 0;
+//    gitSumOddH(tree.getRoot() , sum);
+//    return sum;
+//
+//  }
+//  private static void gitSumOddH(BinaryNode<Integer> node , Integer sum) {
+//
+//
+//    if (node.getData() % 2!=0 ){
+//      sum = sum + node.getData();
+//    }
+//
+//    if (node.getLeftNode() != null) {
+//      gitSumOddH(node.getLeftNode(), sum);
+//    }
+//
+//    if (node.getRightNode() != null) {
+//      gitSumOddH(node.getRightNode(), sum);
+//
+//    }
+//  }
+public static Integer countOdd_rek(BinaryNode<Integer> bn) {
+ int sum = 0;
+    if (bn != null) {
+      if (bn.getData() % 2 != 0) {
+        sum += bn.getData();
+      }
+      sum += countOdd_rek(bn.getLeftNode());
+      sum += countOdd_rek(bn.getRightNode());
+    }
+    return sum;
+  }
 }

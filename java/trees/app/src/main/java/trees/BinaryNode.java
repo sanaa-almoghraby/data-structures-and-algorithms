@@ -7,6 +7,12 @@ public class BinaryNode<T> {
   private BinaryNode<T> leftNode;
   private BinaryNode<T> rightNode;
 
+  public BinaryNode(T data, BinaryNode<T> leftNode, BinaryNode<T> rightNode) {
+    this.data = data;
+    this.leftNode = leftNode;
+    this.rightNode = rightNode;
+  }
+
   public BinaryNode(T data) {
     this.data = data;
   }

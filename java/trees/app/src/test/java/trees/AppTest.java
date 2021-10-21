@@ -32,4 +32,18 @@ class AppTest {
       assertEquals("[20, 5, 83, 22, 33]", BinaryTree.breadthFirst(newTree4).toString());
 
   }
+  @Test
+  public void fizzBuzzTest(){
+    kTree ktree = new kTree();
+    NodeK root = new NodeK("4");
+    NodeK node1 = new NodeK("15");
+    NodeK node2 = new NodeK("20");
+    NodeK node3 = new NodeK("65");
+
+    ktree.root = root;
+    root.children.add(node1);
+    root.children.add(node2);
+    node1.children.add(node3);
+    assertEquals("4 FizzBuzz Buzz Buzz ",ktree.fizzBuzz(root));
+  }
 }

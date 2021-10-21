@@ -3,6 +3,8 @@
  */
 package trees;
 
+import org.w3c.dom.Node;
+
 public class App {
     public String getGreeting() {
         return "Hello World!";
@@ -65,6 +67,44 @@ public class App {
       newTree4.add(63);
       newTree4.add(22);
       System.out.println(BinaryTree.breadthFirst(newTree4));
+      //=================================================================
 
+//      BinaryTree<Integer> newTree5 = new BinaryTree<>();
+//      newTree5.add(10);
+//      newTree5.add(20);
+//      newTree5.add(5);
+//      newTree5.add(8);
+//      newTree5.add(6);
+//      System.out.println(BinaryTree.getSumOdd(newTree5));
+
+//      BinaryNode<Integer> node4 = new BinaryNode(7);
+//      BinaryNode<Integer> node5 = new BinaryNode(8);
+//      BinaryNode<Integer> node6 = new BinaryNode(11);
+//      BinaryNode<Integer> node2 = new BinaryNode(2, node4, node5);
+//      BinaryNode<Integer> node3 = new BinaryNode(12, node6, null);
+//      BinaryNode<Integer> root = new BinaryNode(10, node2, node3);
+//      BinaryTree binaryTree = new BinaryTree();
+//
+//      System.out.println(BinaryTree.countOdd_rek(root));
+      //====================================================================
+
+      kTree ktree = new kTree();
+      NodeK root = new NodeK("4");
+      NodeK node1 = new NodeK("15");
+      NodeK node2 = new NodeK("16");
+      NodeK node3 = new NodeK("65");
+      NodeK node4 = new NodeK("5");
+      NodeK node5 = new NodeK("1");
+      NodeK node6 = new NodeK("50");
+
+      ktree.root = root;
+      root.children.add(node1);
+      root.children.add(node2);
+      node1.children.add(node3);
+      node1.children.add(node4);
+      node1.children.add(node5);
+      node2.children.add(node6);
+      System.out.println(ktree.fizzBuzz(root));
     }
+
 }
