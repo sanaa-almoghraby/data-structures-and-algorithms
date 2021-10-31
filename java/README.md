@@ -52,4 +52,4 @@ The class contain the following methods
 |Challenge11|[link](https://github.com/sanaa-almoghraby/data-structures-and-algorithms/tree/main/java/Challenge11)|
 |Challenge16|[link](https://github.com/sanaa-almoghraby/data-structures-and-algorithms/tree/master/java/Challange16)|
 |Challenge17|[link](https://github.com/sanaa-almoghraby/data-structures-and-algorithms/tree/master/java/Challange17)|
-|Challenge26|[](https://github.com/sanaa-almoghraby/data-structures-and-algorithms/tree/master/java/Challenge26)|
+|Challenge26|[link](https://github.com/sanaa-almoghraby/data-structures-and-algorithms/tree/master/java/Challenge26)|
