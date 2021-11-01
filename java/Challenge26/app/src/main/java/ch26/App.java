@@ -5,6 +5,7 @@ package ch26;
 
 import java.util.Arrays;
 
+import static ch26.Mergesort.mergeSort;
 import static ch26.Sort.insertionSort;
 
 public class App {
@@ -19,6 +20,7 @@ public class App {
 
       int [] newArr={10,4,23,8,16,79};
      System.out.println(Arrays.toString(insertionSort(newArr)));
+     System.out.println(Arrays.toString(mergeSort(newArr)));
     }
 
 
