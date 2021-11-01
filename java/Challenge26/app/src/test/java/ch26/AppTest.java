@@ -21,4 +21,11 @@ class AppTest {
     int [] res={4, 8, 10, 16, 23, 79};
     assertEquals(Arrays.toString(res), Arrays.toString(sort.insertionSort(newArr)));
   }
+  @Test
+  void testMergesort(){
+    Mergesort sort=new Mergesort();
+    int [] newArr={10,4,23,8,16,79};
+    int [] res={4, 8, 10, 16, 23, 79};
+    assertEquals(Arrays.toString(res), Arrays.toString(sort.mergeSort(newArr)));
+  }
 }
