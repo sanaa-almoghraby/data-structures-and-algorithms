@@ -42,3 +42,29 @@ Return: Sorted array
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 6 hours
+**************************************************************************************
+# Challenge Summary
+<!-- Description of the challenge -->
+### Code Challenge: Class 28
+
+
+### Quick Sort
+
+
+ creating a blog article that shows the step-by-step output after each iteration through some sort of visual.
+
+
+Write a function called Quick Sort
+Arguments: array 
+Return: Sorted array
+
+## Full verification [BLOG](BLOG28.md)
+
+## Whiteboard Process
+<!-- Embedded whiteboard image -->
+![](img/code28.png)
+
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+6 hours
