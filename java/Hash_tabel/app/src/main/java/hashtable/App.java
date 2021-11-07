@@ -25,14 +25,17 @@ public class App {
       stringIntegerHashTable.add("Qusai", 1500);
       stringIntegerHashTable.add("Deyaa", 10000);
 
+//
+//      System.out.println(" index is  " + stringIntegerHashTable.hash("Naim"));
+//
+//      System.out.println("Integer is  " + stringIntegerHashTable.get("Qusai"));
+//
+//      System.out.println("Is contain ?  " + stringIntegerHashTable.contains("abrar"));
+//
+//      System.out.println("Is contain ?  " + stringIntegerHashTable.contains("Jason"));
 
-      System.out.println(" index is  " + stringIntegerHashTable.hash("Naim"));
+      System.out.println(HashTable.repeatedWord("Once upon a time, there was a brave princess who"));
 
-      System.out.println("Integer is  " + stringIntegerHashTable.get("Qusai"));
-
-      System.out.println("Is contain ?  " + stringIntegerHashTable.contains("abrar"));
-
-      System.out.println("Is contain ?  " + stringIntegerHashTable.contains("Jason"));
 
 
 
