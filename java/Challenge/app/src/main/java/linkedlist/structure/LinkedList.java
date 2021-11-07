@@ -189,6 +189,30 @@ public class LinkedList {
       return list1.head;
     }
   }
+  public  String mergeLists(LinkedList linkedList1, LinkedList linkedList2){
+
+    LinkedListNode n1 = linkedList1.head;
+    LinkedListNode n2 = linkedList2.head;
+    LinkedList zipLinkedList = new LinkedList();
+    int fullSize = linkedList1.listSize+ linkedList2.listSize;
+
+    while (fullSize > 0){
+
+      if(n1 != null){
+        zipLinkedList.insert(n1.getData());
+        n1 = n1.getNext();
+      }
+
+      if(n2 != null){
+        zipLinkedList.insert(n2.getData());
+        n2 = n2.getNext();
+      }
+
+      fullSize--;
+
+    }
+    return zipLinkedList.toString();
+  }
 
   public LinkedList reverse(LinkedList list) {
     if (list.head == null) return null;
