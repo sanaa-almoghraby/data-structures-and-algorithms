@@ -28,7 +28,7 @@ public class Main {
     linkedList2.insert("B");
     linkedList2.insert("Z");
 
-
+LinkedList list3=new LinkedList();
 //    linkedList.append("O");
 //    linkedList.insertBefore("N","L");
 //    linkedList.insertAfter("N","W");
@@ -37,18 +37,18 @@ public class Main {
     linkedList2.stringOutput();
 
 
-//    linkedList.merge(linkedList,linkedList2);
+    linkedList.merge(linkedList,linkedList2);
     System.out.println(linkedList.stringOutput());
 
 //    String sss=linkedList.kthFromEnd(0);
 //    System.out.println(sss);
 
     System.out.println(linkedList2.stringOutput());
-    list.head = list.merge(linkedList, linkedList2);
-    System.out.println("List for Zip function ==> ");
-    System.out.println(list.stringOutput());
-    System.out.println("  " + linkedList.includes("A") + "  ");
-
+//    list.head = list.merge(linkedList, linkedList2);
+//    System.out.println("List for Zip function ==> ");
+//    System.out.println(list.stringOutput());
+//    System.out.println("  " + linkedList.includes("A") + "  ");
+//
     System.out.println(list.reverse(linkedList).stringOutput());
 
 //    stackDemo();
