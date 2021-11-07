@@ -1,6 +1,8 @@
 package hashtable;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Objects;
 
 public class HashTable <K,V>{
@@ -102,4 +104,20 @@ public class HashTable <K,V>{
     }
     return false;
   }
+
+  public static  String repeatedWord(String sentence){
+    Map<String,String> hashMap=new HashMap<>();
+//    sentence = sentence.replace(",","");
+    String [] repeatWord = sentence.split(" ");
+
+    for (int i=0 ; i<repeatWord.length;i++){
+       String word = repeatWord[i].toLowerCase();
+       if (hashMap.containsKey(word))
+         return word;
+       else
+         hashMap.put(word,word);
+    }
+    return "NO REPEATED WORDS";
+  }
+
 }
