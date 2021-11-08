@@ -34,7 +34,7 @@ public class App {
 //
 //      System.out.println("Is contain ?  " + stringIntegerHashTable.contains("Jason"));
 
-      System.out.println(HashTable.repeatedWord("Once upon a time, there was a brave princess who"));
+      System.out.println(HashTable.repeatedWord("It was a queer, sultry summer, the summer they electrocuted the Rosenbergs, and I didn’t know what I was doing in New York"));
 
 
 
