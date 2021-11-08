@@ -3,6 +3,10 @@
  */
 package hashtable;
 
+import Tree.BinaryTree;
+import Tree.Node;
+import Tree.TreeIntersection;
+
 public class App {
     public String getGreeting() {
         return "Hello World!";
@@ -34,8 +38,29 @@ public class App {
 //
 //      System.out.println("Is contain ?  " + stringIntegerHashTable.contains("Jason"));
 
-      System.out.println(HashTable.repeatedWord("Once upon a time, there was a brave princess who"));
+      System.out.println(HashTable.repeatedWord("It was a queer, sultry summer, the summer they electrocuted the Rosenbergs, and I didn’t know what I was doing in New York"));
 
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+      BinaryTree<Integer> binaryTreeOne = new BinaryTree<>(new Node<>(5));
+      Node<Integer> node1 = new Node<>(5);
+      Node<Integer> node2 = new Node<>(3);
+      Node<Integer> node3 = new Node<>(2, node1, node2);
+      Node<Integer> node5 = new Node<>(66);
+      Node<Integer> node4 = new Node<>(4, node5, null);
+      binaryTreeOne.root.rightChild = node4;
+      binaryTreeOne.root.leftChild = node3;
+
+      BinaryTree<Integer> binaryTreeTwo = new BinaryTree<>(new Node<>(45));
+      Node<Integer> node6 = new Node<>(5);
+      Node<Integer> node7 = new Node<>(12);
+      Node<Integer> node8 = new Node<>(2, node6, node7);
+      Node<Integer> node9 = new Node<>(44);
+      Node<Integer> node10 = new Node<>(66, node9, null);
+      binaryTreeTwo.root.rightChild = node10;
+      binaryTreeTwo.root.leftChild = node8;
+
+      System.out.println(TreeIntersection.treeIntersection(binaryTreeOne, binaryTreeTwo));
 
 
 

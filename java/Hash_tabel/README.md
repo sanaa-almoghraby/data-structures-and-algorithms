@@ -29,3 +29,14 @@ Implement a Hashtable Class with the following methods:
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 it take 2 hours
+***************************************************************************************
+#Code Challenge: Class 32
+
+Write a function called tree_intersection that takes two binary trees as parameters.
+Using Hashmap implementation as a part of your algorithm, return a set of values found in both trees.
+## Whiteboard Process
+<!-- Embedded whiteboard image -->
+![](./img/ch32.png)
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+it take 2 hours
