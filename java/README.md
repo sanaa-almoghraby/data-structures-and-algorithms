@@ -56,3 +56,4 @@ The class contain the following methods
 |Challenge27|[link](https://github.com/sanaa-almoghraby/data-structures-and-algorithms/blob/master/java/Challenge26/README.md)|
 |Challenge31|[link](https://github.com/sanaa-almoghraby/data-structures-and-algorithms/tree/master/java/Challange31)|
 |Challenge32|[link](https://github.com/sanaa-almoghraby/data-structures-and-algorithms/tree/master/java/Hash_tabel)|
+|Challenge33|[link](https://github.com/sanaa-almoghraby/data-structures-and-algorithms/blob/master/java/Hash_tabel/img/ch33.png)|
