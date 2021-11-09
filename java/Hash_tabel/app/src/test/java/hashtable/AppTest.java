@@ -7,6 +7,9 @@ import Tree.BinaryTree;
 import Tree.Node;
 import Tree.TreeIntersection;
 import org.junit.jupiter.api.Test;
+
+import java.util.HashMap;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
@@ -57,6 +60,26 @@ class AppTest {
     binaryTreeTwo.root.rightChild = node10;
     binaryTreeTwo.root.leftChild = node8;
     assertEquals( "[2, 5, 66]", TreeIntersection.treeIntersection(binaryTreeOne, binaryTreeTwo).toString());
+
+  }
+  @Test
+  public void  hashMapLeftJoinTest(){
+
+    HashTable hashmapLeftJoin =new HashTable();
+
+    HashMap hashMap=new HashMap();
+    hashMap.put("keyOne","sanaa");
+    hashMap.put("keyTow","batool");
+    hashMap.put("keyThree","omar");
+    hashMap.put("keyFour","four");
+
+    HashMap hashMapTow=new HashMap();
+    hashMapTow.put("keyOne","kahlil");
+    hashMapTow.put("keyTow","saif");
+    hashMapTow.put("keyThree","dad");
+    hashMapTow.put("Not exist ","");
+
+    assertEquals( "{keyThree= omar,dad , keyTow= batool,saif , keyOne= sanaa,kahlil , keyFour= four,null }", hashmapLeftJoin.hashMapLeftJoin(hashMap, hashMapTow).toString());
 
   }
 }

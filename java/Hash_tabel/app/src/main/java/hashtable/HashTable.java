@@ -1,9 +1,8 @@
 package hashtable;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Objects;
+import Tree.Node;
+
+import java.util.*;
 
 public class HashTable <K,V>{
   public ArrayList<HashNode<K, V>> bucketArray;
@@ -121,4 +120,17 @@ public class HashTable <K,V>{
     return "NO REPEATED WORDS";
   }
 
+  public HashMap<String, String> hashMapLeftJoin(HashMap<String,String> hashMapOne, HashMap<String,String> hashMapTow){
+    HashMap<String,String>resultTow=new HashMap<>();
+    for (String hashMapOneKeys :hashMapOne.keySet()) {
+      if (hashMapTow.containsKey(hashMapOneKeys)) {
+        String kER=" "+(hashMapOne.get(hashMapOneKeys)+","+hashMapTow.get(hashMapOneKeys)+" ");
+        resultTow.put(hashMapOneKeys,kER);
+      }else {
+        String kER2=" "+(hashMapOne.get(hashMapOneKeys)+",null ");
+        resultTow.put(hashMapOneKeys,kER2);
+      }
+    }
+    return resultTow;
+  }
 }
