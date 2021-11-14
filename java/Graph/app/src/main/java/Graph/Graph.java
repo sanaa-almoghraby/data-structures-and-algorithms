@@ -34,6 +34,32 @@ public class Graph<T> {
     return nodeList.size();
   }
 
+
+
+  public List<Node<T>> breadthFirst(T value) {
+
+    Node<T> node = new Node(value);
+    if (node.value == null) return null;
+    List<Node<T>> nodes = new ArrayList<>();
+    Queue<T> breadth = new Queue<T>();
+    Set<Node<T>> visited = new HashSet<>();
+
+    breadth.enqueue((T) node);
+    visited.add(node);
+
+    while (!breadth.isEmpty()) {
+      Node<T> front = (Node<T>) breadth.dequeue();
+      nodes.add(front);
+      for (Node<T> neighbor : getNeighbors(front.value)) {
+        if (!visited.contains(neighbor)) {
+          visited.add(neighbor);
+          breadth.enqueue((T) neighbor);
+        }
+      }
+    }
+    return nodes;
+  }
+
   @Override
   public String toString() {
     if (nodeList.isEmpty()) return null;

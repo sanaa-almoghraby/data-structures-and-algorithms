@@ -24,11 +24,16 @@ public class App {
       myGraph.addEdge("8" , "9");
       myGraph.addEdge("8" , "1");
       myGraph.addEdge("6" , "5");
-      System.out.println(myGraph);
-      System.out.println(myGraph.getNodes());
-      System.out.println(myGraph.getNeighbors("8"));
-      System.out.println(myGraph.getNeighbors("7"));
-      System.out.println(myGraph.getNeighbors("5"));
-      System.out.println(myGraph.size());
+//      System.out.println(myGraph);
+//      System.out.println(myGraph.getNodes());
+//      System.out.println(myGraph.getNeighbors("8"));
+//      System.out.println(myGraph.getNeighbors("7"));
+//      System.out.println(myGraph.getNeighbors("5"));
+//      System.out.println(myGraph.size());
+
+
+      System.out.println(myGraph.breadthFirst("5"));
+      System.out.println(myGraph.breadthFirst("8"));
+      System.out.println(myGraph.breadthFirst("1"));
     }
 }

@@ -41,5 +41,24 @@ class AppTest {
     assertEquals(0,graph.size());
 
   }
+  @Test
+  public void breadthFirstTest(){
+    Graph myGraph = new Graph();
+    myGraph.addNode("8");
+    myGraph.addNode("3");
+    myGraph.addNode("1");
+    myGraph.addNode("9");
+    myGraph.addNode("6");
+    myGraph.addNode("5");
+
+
+    myGraph.addEdge("8" , "3");
+    myGraph.addEdge("8" , "9");
+    myGraph.addEdge("8" , "1");
+    myGraph.addEdge("6" , "5");
+
+    assertEquals("[8, 3, 9, 1]",myGraph.breadthFirst("8").toString());
+
+  }
 
 }
