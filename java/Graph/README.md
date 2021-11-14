@@ -24,3 +24,15 @@ Implement your own Graph. The graph should be represented as an adjacency list, 
 # size
 * Arguments: none
 * Returns the total number of nodes in the graph
+//////////////////////////////////////////////////////////////////////////////
+
+
+# Challenge Summary
+<!-- Description of the challenge -->
+# Code Challenge: Class 36
+## Implement a breadth-first traversal on a graph.
+## Whiteboard Process
+<!-- Embedded whiteboard image -->
+![](./img/ch36.png)
+## Solution
+it takes 2 -3 hours
