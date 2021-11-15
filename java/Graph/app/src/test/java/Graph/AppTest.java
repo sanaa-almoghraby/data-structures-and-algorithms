@@ -22,18 +22,18 @@ class AppTest {
 
 
   }
-  @Test void addedgeTest(){
-
-    Graph graph = new Graph();
-
-    graph.addNode("5");
-    graph.addNode("2");
-
-    graph.addEdge("5", "2");
-
-    assertEquals("[2, 5]",graph.getNodes().toString());
-    assertEquals(2, graph.size());
-  }
+//  @Test void addedgeTest(){
+//
+//    Graph graph = new Graph();
+//
+//    graph.addNode("5");
+//    graph.addNode("2");
+//
+//    graph.addEdge("5", "2");
+//
+//    assertEquals("[2, 5]",graph.getNodes().toString());
+//    assertEquals(2, graph.size());
+//  }
   @Test
   public void emptyGraph(){
 
@@ -41,23 +41,50 @@ class AppTest {
     assertEquals(0,graph.size());
 
   }
+//  @Test
+//  public void breadthFirstTest(){
+//    Graph myGraph = new Graph();
+//    myGraph.addNode("8");
+//    myGraph.addNode("3");
+//    myGraph.addNode("1");
+//    myGraph.addNode("9");
+//    myGraph.addNode("6");
+//    myGraph.addNode("5");
+//
+//
+//    myGraph.addEdge("8" , "3");
+//    myGraph.addEdge("8" , "9");
+//    myGraph.addEdge("8" , "1");
+//    myGraph.addEdge("6" , "5");
+//
+//    assertEquals("[8, 3, 9, 1]",myGraph.breadthFirst("8").toString());
+//
+//  }
+
+
   @Test
-  public void breadthFirstTest(){
+  public void businessTripTest(){
     Graph myGraph = new Graph();
     myGraph.addNode("8");
-    myGraph.addNode("3");
     myGraph.addNode("1");
+    myGraph.addNode("2");
     myGraph.addNode("9");
-    myGraph.addNode("6");
+    myGraph.addNode("7");
     myGraph.addNode("5");
 
 
-    myGraph.addEdge("8" , "3");
-    myGraph.addEdge("8" , "9");
-    myGraph.addEdge("8" , "1");
-    myGraph.addEdge("6" , "5");
 
-    assertEquals("[8, 3, 9, 1]",myGraph.breadthFirst("8").toString());
+    myGraph.addEdge("8" , "1" , 50);
+    myGraph.addEdge("5" , "1" , 70);
+    myGraph.addEdge("7" , "5", 20);
+    myGraph.addEdge("8" , "9", 100);
+    myGraph.addEdge("8" , "2", 40);
+//    String[] trip = {"8" , "1" , "5"};
+//    String[] trip2 = {"8" , "5"};
+    String[] trip3 = {"8" , "1" , "5" , "7" , "5" , "1" , "8" , "9"};
+
+
+        assertEquals("true, $380",myGraph.businessTrip("8",trip3).toString());
 
   }
 

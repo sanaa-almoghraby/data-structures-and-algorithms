@@ -36,3 +36,15 @@ Implement your own Graph. The graph should be represented as an adjacency list, 
 ![](./img/ch36.png)
 ## Solution
 it takes 2 -3 hours
+**********************************************************************
+# Challenge Summary
+<!-- Description of the challenge -->
+Code Challenge: Class 37
+* Write a function called business trip
+* Arguments: graph, array of city names
+* Return: cost or null
+## Whiteboard Process
+<!-- Embedded whiteboard image -->
+![](./img/ch37.png)
+## Solution
+it takes 2 -3 hours
