@@ -87,5 +87,26 @@ class AppTest {
         assertEquals("true, $380",myGraph.businessTrip("8",trip3).toString());
 
   }
+  @Test
+  public void depthFirstTest(){
+    Graph myGraph = new Graph();
+    myGraph.addNode("8");
+    myGraph.addNode("1");
+    myGraph.addNode("2");
+    myGraph.addNode("9");
+    myGraph.addNode("7");
+    myGraph.addNode("5");
+
+
+
+    myGraph.addEdge("8" , "1" , 50);
+    myGraph.addEdge("5" , "1" , 70);
+    myGraph.addEdge("7" , "5", 20);
+    myGraph.addEdge("8" , "9", 100);
+    myGraph.addEdge("8" , "2", 40);
+    assertEquals("[5, 7, 1, 8, 2, 9]",myGraph.depthFirst("5").toString());
+
+
+  }
 
 }
