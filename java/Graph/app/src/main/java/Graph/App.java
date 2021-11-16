@@ -39,15 +39,21 @@ public class App {
 //      System.out.println(myGraph.getNeighbors("7"));
 //      System.out.println(myGraph.getNeighbors("5"));
 //      System.out.println(myGraph.size());
-
-
-      System.out.println(myGraph.businessTrip("8",trip));
-      System.out.println(myGraph.businessTrip("8",trip2));
-      System.out.println(myGraph.businessTrip("8",trip3));
-
-
-      System.out.println(myGraph.breadthFirst("5"));
+//
+//
+//      System.out.println(myGraph.businessTrip("8",trip));
+//      System.out.println(myGraph.businessTrip("8",trip2));
+//      System.out.println(myGraph.businessTrip("8",trip3));
+//
+//
+//      System.out.println(myGraph.breadthFirst("5"));
 //      System.out.println(myGraph.breadthFirst("8"));
 //      System.out.println(myGraph.breadthFirst("1"));
+
+
+
+      System.out.println(myGraph.depthFirst("5"));
+      System.out.println(myGraph.depthFirst("7"));
+      System.out.println(myGraph.depthFirst("8"));
     }
 }
