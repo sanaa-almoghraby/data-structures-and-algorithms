@@ -59,3 +59,4 @@ The class contain the following methods
 |Challenge33|[link](https://github.com/sanaa-almoghraby/data-structures-and-algorithms/blob/master/java/Hash_tabel/img/ch33.png)|
 |Challenge36|[link](https://github.com/sanaa-almoghraby/data-structures-and-algorithms/blob/master/java/Graph/img/ch36.png)|
 |Challenge37|[link](https://github.com/sanaa-almoghraby/data-structures-and-algorithms/blob/master/java/Graph/img/ch37.png)|
+|Challenge38|[link](https://github.com/sanaa-almoghraby/data-structures-and-algorithms/blob/master/java/Graph/img/ch38.png)|
